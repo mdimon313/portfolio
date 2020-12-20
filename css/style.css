@@ -115,7 +115,7 @@ nav ul li a {
     text-decoration: line-through;
     transition: all .5s ease-in-out;
 }
-.checkbtn {
+.show-btn, .close-btn {
     font-size: 30px;
     color: #fff;
     float: right;
@@ -123,6 +123,7 @@ nav ul li a {
     margin-right: 40px;
     cursor: pointer;
     display: none;
+    transition: all .4s ease-in-out;
 }
 #check {
     display: none;
@@ -388,13 +389,14 @@ section.work {
     background: rgba(0,0,0,0.8);
     opacity: 0;
     transition: all .4s ease-out;
+    z-index: 1;
 }
 .grid .img:hover img {
     transform: scale(1.1);
     transition: all .4s ease-in-out;
 }
 .grid .img:hover .icon {
-    opacity: 1;
+    opacity: 1 !important;
 }
 .grid .img .icon i {
     color: #fff;
@@ -439,7 +441,7 @@ iframe.video {
     /* border: 1px solid #ddd; */
     padding: 15px;
     border-radius: 4px;
-    margin: 15px;
+    margin: 10px 0;
     transition: all .4s ease-in-out;
 }
 .service-box:hover {

@@ -1,11 +1,15 @@
 @media (max-width: 992px)  {
 	/* DEFAULT VALUES */
-	.col-6,
+	/* .col-6,
 	.col-4 {
 		width: 100%;
 		padding: 0 15px;
 		float: left;
+	} */
+	.col-4 {
+		width: 50%;
 	}
+	
 	.d-none {
 		display: block;
 	}
@@ -34,7 +38,7 @@
 	nav ul li a {
 		font-size: 16px;
 	}
-	.checkbtn {
+	.show-btn {
 		display: block;
 	}
 	nav ul {
@@ -62,11 +66,16 @@
 	#check:checked ~ ul {
 		left: 0;
 	}
+	#check:checked ~ ul .closebtn {
+		display: block !important;
+		left: -100%;
+	}
 	/* END HEADER */
 	
 	/* START BANNER */
 	
-	.row {
+	
+	.md-banner {
 		overflow: hidden;
 		display: flex;
 		align-items: center;
@@ -88,6 +97,7 @@
 		background: #000;
 		margin-top: 60px;
 		padding: 60px 0;
+		z-index: 9;
 	}
 
 	.porfile-disc {
@@ -116,6 +126,7 @@
 	.porfile-disc .button {
 		width: 150px;
 		height: 40px;
+		line-height: 38px;
 		border: none;
 		outline: none;
 		color: #fff;
@@ -200,9 +211,9 @@
 	.design-info {
 		text-align: center;
 	}
-	.footer-menu {
+	/* .footer-menu {
 		flex-direction: column;
-	}
+	} */
 	.foot-menu ul li {
 		margin-top: 1rem;
 	}
@@ -220,17 +231,93 @@
 }
 	/* footer end */
 }
-@media (max-width: 670px) {
+
+/* ================== NEW BREAK POINT ================= */
+
+@media (max-width: 470px) {
 	.col-6,
 	.col-4 {
 		width: 100%;
 		padding: 0 15px;
 		float: left;
 	}
+	/*=================== BANNER START ============================= */
+	.profile-img img {
+		width: 150px;
+		height: 150px;
+	}
+	.porfile-disc h1 {
+		font-size: 24px;
+	}
+	.porfile-disc p {
+		font-size: 14px;
+	}
+	.porfile-disc .button {
+		width: 125px;
+		height: 35px;
+		font-size: 14px;
+		line-height: 30px;
+	}
+	/*=================== BANNER END ============================= */
+	/*=================== ABOUT START ============================= */
+	.sec-title-head h2::first-letter {
+		font-size: 3rem;
+	}
+	.sec-title-head h2 {
+		font-size: 2rem;
+		text-align: center;
+	}
+	.sec-title-head {
+		font-size: 13px;
+	}
+	.sign-img {
+		width: 150px;
+	}
+	/*=================== ABOUT END ============================= */
+
+
+	/*=================== SKILL START ============================= */
+	.skill-meta .skill-disc {
+		margin-bottom: 7px;
+		font-size: 15px;
+		line-height: 28px;
+	}
+	/*=================== SKILL END ============================= */
+	/*=================== WORK START ============================= */
+	.grid {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.grid .img:hover img {
+		transform: scale(.9);
+	}
+	.lode-more .load-more {
+		font-size: 14px;
+	}
+	/*=================== WORK END ============================= */
+	
+	/*=================== WORK PROCESS START ============================= */
+	iframe.video {
+		height: auto;
+	}
+	/*=================== WORK PROCESS END ============================= */
+
+
+	/*=================== TESTIMONIAL START ============================= */
+	.testimonial-content {
+		width: 100%;
+	}
+	.testimonial-content p {
+		font-size: 1.1rem;
+		line-height: 2rem;
+	}
+	/*=================== TESTIMONIAL  END ============================= */
+
+
+	/*=================== NEED PROJECT  START ============================= */
 	.project-form form {
 		width: 100%;
 	}
-	.input-name {
+	.row, .input-name {
 		flex-direction: column;
 	}
 	.input-name > input {
@@ -239,10 +326,9 @@
 	.input-name > input[type="email"] {
 		margin-left: 0;
 	}
-	.grid {
-		grid-template-columns: repeat(1, 1fr);
-	}
 	.project-form form {
 		width: 100%;
 	}
+	/*=================== NEED PROJECT  START ============================= */
+	
 }
