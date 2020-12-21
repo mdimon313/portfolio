@@ -2,6 +2,7 @@ let showBtn = document.querySelector(".show-btn");
 let closeBtn = document.querySelector(".close-btn");
 let navList = document.querySelector("#nav-list");
 
+
 showBtn.addEventListener('click', ()=> {
     navList.style = 'left: 0';
     closeBtn.style.display = 'block';

@@ -48,6 +48,8 @@ section {
 .row {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .container {
 /*    width: 1170px;*/
@@ -56,30 +58,20 @@ section {
     padding: 0 15px;
     overflow: hidden;
 }
+
 /* ------------------ END GLOBAL VALUS ---------------------- */
 
 /*       HEADER STYLE       */
 .header {
-    background: #0082e6;
+    background: #10c9c3;
     height: 60px;
     width: 100% !important;
-    position: absolute;
-    z-index: 999;
-    top: 0;
 }
 .header::after {
     content: '';
     clear: both;
     display: block;
 }
-
-/*
-nav {
-    background: #0082e6;
-    height: 60px;
-    width: 100%;
-}
-*/
 
 label.logo {
     color: #fff;
@@ -111,11 +103,11 @@ nav ul li a {
 }
 .active, nav ul li a:hover {
     /* background: #10c9c3; */
-    color: #10c9c3;
+    color: #fff;
     text-decoration: line-through;
     transition: all .5s ease-in-out;
 }
-.checkbtn {
+.show-btn, .close-btn {
     font-size: 30px;
     color: #fff;
     float: right;
@@ -123,9 +115,322 @@ nav ul li a {
     margin-right: 40px;
     cursor: pointer;
     display: none;
+    transition: all .4s ease-in-out;
 }
-#check {
+/* HEADER END */
+/* ---------------------- BANNER START --------------------- */
+section.about-banner {
+    background: url(../image/about/about2.jpg) no-repeat;
+    background-size: cover;
+    /* height: 80vh; */
+    width: 100%;
+    background-position: center;
+}
+
+.banner-contant {
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+.banner-contant h1 {
+    font-size: 3rem;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    text-align: center;
+}
+
+.banner-contant p {
+    font-family: 'Lato';
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 18px;
+}
+/* ---------------------- BANNER END --------------------- */
+
+/*          complete-project START              */
+section.complete-project {
+    background: #10c9c3;
+    padding: 40px 0px;
+}
+.porject-complete-single-box {
+    overflow: hidden;
+    display: flex;
+}
+.porject-complete-single-box .project-icon img {
+    width: 100%;
+    height: auto;
+}
+.porject-complete-single-box .porject-meta {
+    overflow: hidden;
+    margin-left: 1.9rem;
+}
+.porject-complete-single-box .porject-meta h4 {
+    font-size: 1.4rem;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Montserrat';
+}
+.porject-complete-single-box .project-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.porject-complete-single-box .porject-meta p {
+    font-family: 'Montserrat';
+    line-height: 30px;
+    font-size: .8rem;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+/*          complete-project End              */
+/* --------------------- ABOUT ME START -------------------- */
+section.about-me {
+    position: relative;
+}
+
+section.about-me::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: #ddd;
+    background: url(../image/pic.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*----------------------- ONLY RESPOSSIVESTYLE START---------------------*/
+.user-image {
+    width: 250px;
+    height: 250px;
+    margin: auto;
     display: none;
 }
 
-/* HEADER END */
+.user-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+/*----------------------- ONLY RESPOSSIVESTYLE END ---------------------*/
+.about-me {
+    padding: 100px 0;
+}
+.about-me-content {
+    overflow: hidden;
+    padding: 15px;
+}
+
+.about-me-content h2 {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 2.3rem;
+}
+
+.about-me-content h2:first-letter {
+    color: #10c9c3;
+    font-weight: 900;
+    font-size: 4rem;
+    text-shadow: -2px 1px 6px #00000091;
+}
+
+.about-me-content p {
+    font-size: 1.1rem;
+    line-height: 24px;
+    font-family: 'Lato';
+    font-weight: 400;
+}
+.about-me-content .hair-me {
+    padding: 10px 40px;
+    border: 1px solid #10c9c3;
+    outline: none;
+    color: #fff;
+    background: #10c9c3;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    letter-spacing: 1.3px;
+	transition: all .3s ease-in-out;
+}
+.about-me-content .hair-me:hover {
+    background: transparent;
+    border: 1px solid #10c9c3;
+    color: #585858;
+}
+
+/* --------------------- ABOUT ME END -------------------- */
+
+/*          NEED PROJECT START              */
+.sec-title-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.sec-title-head h2 {
+    /* text-transform: capitalize; */
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Lato';
+    color: #191919;
+}
+.sec-title-head h2::first-letter {
+    font-size: 45px;
+    color: #10c9c3;
+    margin-right: 2px;
+    text-shadow: -2px 1px 6px #00000091;
+}
+.sec-title-head p {
+    flex-wrap: wrap;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    color: #787878;
+}
+.sec-title-head a {
+    padding: 10px 20px;
+    border: 1px solid #10c9c3;
+    outline: none;
+    color: #fff;
+    background: #10c9c3;
+    border-radius: 3px;
+    font-size: 1.1rem;
+    font-family: 'Lato';
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 1.3px;
+    transition: all .3s ease-in-out;
+}
+.sec-title-head a:hover {
+    background: transparent;
+    border: 1px solid #10c9c3;
+    color: #585858;
+}
+
+/*          NEED PROJECT END              */
+
+/* ---------------> FOOTER START <----------------- */
+.foorer {
+    padding: 80px 0;
+    background: #141414;
+}
+.design-info {
+    color: #fff;
+}
+
+.design-info h3 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+.design-info p {
+    color: #757575;
+    font-size: 14px;
+    font-family: 'Lato';
+    font-weight: 400;
+    line-height: 22px;
+}
+.design-info p:last-child {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #414141;
+}
+.contact-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-info > a {
+    color: #b6b6b6;
+    font-family: 'Lato';
+    font-size: 15px;
+    line-height: 16px;
+    margin: 5px 0;
+    letter-spacing: .5px;
+}
+
+.contact-info > a:last-child:hover {
+    color: #10c9c3;
+    text-decoration: underline;
+    transition: all .4s ease-in;
+}
+.footer-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.foot-menu ul li {
+    margin: 5px 0;
+}
+
+.foot-menu ul li a {
+    font-size: 14px;
+    font-family: 'Lato';
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #b6b6b6;
+}
+
+.foot-menu ul li a:hover {
+    color: #10c9c3;
+    text-decoration: line-through;
+}
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.social-icon a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #10c9c3;
+    display: grid;
+    place-items: center;
+    margin: 0 8px;
+    transition: all .4s ease-in-out;
+}
+
+.social-icon a i {
+    font-size: 18px;
+    color: #fff;
+}
+.social-icon a.facebook:hover {
+    background-color: #3b5998;
+    transform: scale(.9);
+    box-shadow: 0px 0px 10px 0px #3b5998;
+}
+.social-icon a.twitter:hover {
+    background-color: #00acee;
+    transform: scale(.9);
+    box-shadow: 0px 0px 10px 0px #00acee;
+}
+.social-icon a.linkedin:hover {
+    background-color: #0e76a8;
+    transform: scale(.9);
+    box-shadow: 0px 0px 10px 0px #0e76a8;
+}
+.social-icon a.dribble:hover {
+    background-color: #ea4c89;
+    transform: scale(.9);
+    box-shadow: 0px 0px 10px 0px #ea4c89;
+}
+/* ---------------> FOOTER END <----------------- */

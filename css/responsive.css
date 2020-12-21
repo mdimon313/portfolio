@@ -1,11 +1,6 @@
 @media (max-width: 992px)  {
 	/* DEFAULT VALUES */
-	/* .col-6,
-	.col-4 {
-		width: 100%;
-		padding: 0 15px;
-		float: left;
-	} */
+	
 	.col-4 {
 		width: 50%;
 	}
@@ -27,6 +22,7 @@
 		position: fixed;
 		top: 0;
 		left: 0;
+		z-index: 9;
 	}
 	label.logo {
 		font-size: 30px;
@@ -237,7 +233,7 @@
 @media (max-width: 470px) {
 	.col-6,
 	.col-4 {
-		width: 100%;
+		width: 100% ;
 		padding: 0 15px;
 		float: left;
 	}
@@ -318,6 +314,8 @@
 		width: 100%;
 	}
 	.row, .input-name {
+		justify-content: center;
+		flex-wrap: wrap;
 		flex-direction: column;
 	}
 	.input-name > input {
@@ -330,5 +328,26 @@
 		width: 100%;
 	}
 	/*=================== NEED PROJECT  START ============================= */
+
+
+
+
+
+
+
+
+
+
+
+	/*=================== ABOUT.HTML STYLE  START ============================= */
+	section.about-me::before {
+		content: none;
+	}
+	.user-image {
+		display: block;
+	}
+	.about-me-content {
+		text-align: center;
+	}
 	
 }

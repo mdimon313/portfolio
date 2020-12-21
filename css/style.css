@@ -48,6 +48,8 @@ section {
 .row {
     display: flex;
     align-items: center;
+    /* justify-content: center; */
+    flex-wrap: wrap;
 }
 .container {
 /*    width: 1170px;*/
@@ -124,9 +126,6 @@ nav ul li a {
     cursor: pointer;
     display: none;
     transition: all .4s ease-in-out;
-}
-#check {
-    display: none;
 }
 
 /* HEADER END */
@@ -215,6 +214,17 @@ nav ul li a {
     line-height: 26px;
     text-align: center;
     color: #787878;
+}
+.sec-title-head a {
+    font-size: 15px;
+    color: #787878;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.sec-title-head a:hover {
+    color: #10c9c3;
+    transition: all .3s ease-in-out;
+    text-decoration: underline;
 }
 .sign-img {
     max-width: 225px;
