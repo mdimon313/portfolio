@@ -150,10 +150,7 @@
 	/*          ABOUT END            */
 
 	/*          SKILL START            */
-	.skill::before,
-	.skill::after {
-		content: none;
-	}
+	
 	.skill {
 		background-color: #f8f9f9;
 	}
@@ -273,6 +270,10 @@
 
 
 	/*=================== SKILL START ============================= */
+	.skill::before,
+	.skill::after {
+		content: none;
+	}
 	.skill-meta .skill-disc {
 		margin-bottom: 7px;
 		font-size: 15px;
