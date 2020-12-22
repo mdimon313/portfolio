@@ -606,7 +606,7 @@ textarea:focus {
 
     border: 1px solid #10c9c3;
 }
-button.send-msg {
+a.send-msg {
     font-size: 16px;
     font-family: 'Lato';
     font-weight: 600;

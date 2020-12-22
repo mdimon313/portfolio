@@ -184,6 +184,9 @@
 		grid-template-columns: repeat(2, 1fr);
 	}
 	/*          Work End              */
+	iframe.video, iframe.map {
+		height: auto;
+	}
 
 	/*          Need project Start            */
 	.project-form form {
@@ -225,7 +228,7 @@
 	/* footer end */
 }
 
-/* ================== NEW BREAK POINT ================= */
+/* ======================================= NEW BREAK POINT ================= */
 
 @media (max-width: 470px) {
 	.col-6,
@@ -234,6 +237,7 @@
 		padding: 0 15px;
 		float: left;
 	}
+	
 	/*=================== BANNER START ============================= */
 	.profile-img img {
 		width: 150px;
@@ -284,6 +288,7 @@
 	.grid {
 		grid-template-columns: repeat(1, 1fr);
 	}
+	.grid:hover img,
 	.grid .img:hover img {
 		transform: scale(.9);
 	}
@@ -293,7 +298,7 @@
 	/*=================== WORK END ============================= */
 	
 	/*=================== WORK PROCESS START ============================= */
-	iframe.video {
+	iframe.video, iframe.map {
 		height: auto;
 	}
 	/*=================== WORK PROCESS END ============================= */
@@ -350,5 +355,14 @@
 	.about-me-content {
 		text-align: center;
 	}
+	/*=================== ABOUT.HTML STYLE  END ============================= */
 	
+	/*==================== CONTACT.HTML STYLE START ================ */
+	.send-msg {
+		margin: auto;
+	}
+	.contact-disc {
+		text-align: center;
+	}
+	/*==================== CONTACT.HTML STYLE END ================ */
 }
