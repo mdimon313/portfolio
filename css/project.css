@@ -1,0 +1,322 @@
+/* ---------------------- FONTS ----------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;600;700&display=swap');
+
+/*     GLOBAL VALUES     */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #333;
+    transition: all .3s ease-in-out;
+}
+ul {
+    list-style: none;
+}
+section {
+    padding: 80px 0;
+}
+.col-6 {
+    width: 50%;
+    padding: 0 15px;
+}
+.col-4 {
+    width: 25%;
+    padding: 0 15px;
+}
+.col-12 {
+    width: 100%;
+    padding: 0 15px;
+}
+.mb-2 {
+    margin-bottom: 2rem;
+}
+.d-none {
+	display:none;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container {
+/*    width: 1170px;*/
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+    overflow: hidden;
+}
+
+/* ------------------ END GLOBAL VALUS ---------------------- */
+
+/*------------------------------------- HEADER STYLE START -----------------------------------------*/
+.header {
+    background: #10c9c3;
+    height: 60px;
+    width: 100% !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+.header::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+label.logo {
+    color: #fff;
+    font-size: 35px;
+    line-height: 60px;
+    max-width: 40px; 
+    float: left;
+}
+label.logo img {
+    width: 100%;
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+nav ul li {
+/*    display: inline-block;*/
+    float: left;
+    line-height: 60px;
+    margin: 0 2px;
+}
+nav ul li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 13px;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+.active, nav ul li a:hover {
+    color: #fff;
+    text-decoration: line-through;
+    transition: all .5s ease-in-out;
+}
+.show-btn, .close-btn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    transition: all .4s ease-in-out;
+}
+/*----------------------------------------------- HEADER STYLE END ----------------------------------------------*/
+
+/* ------------------------------------------ PROJECT STYLE START ------------------------------------ */
+.project {
+    background: #f6f6f6;
+    margin-top: 60px;
+    position: relative;
+}
+section.project::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: url(../image/project/project_img1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.project-disc {
+    padding: 8px;
+    overflow: hidden;
+}
+
+.project-disc h2 {
+    font-size: 32px;
+    font-family: 'Montserrat';
+    color: #191919;
+    font-weight: 600;
+}
+
+.project-disc p {
+    font-size: 17px;
+    color: #787878;
+    font-family: 'Lato';
+    font-weight: 400;
+    line-height: 25px;
+}
+.project-details p {
+    line-height: 30px;
+}
+.project-disc p span {
+    color: #191919;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    margin-right: 8px;
+}
+
+/* ------------------------------------------ PROJECT STYLE END ------------------------------------ */
+
+
+/* ------------------------------------------ PROJECT STYLE END ------------------------------------ */
+.buttons {
+    padding: 40px 0;
+    /* background: #f6f6f6; */
+}
+
+.project-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.project-btn .pre-btn a {
+    display: flex;
+    display: block;
+    align-items: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Lato';
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+}
+.project-btn a i {
+    margin: 0 8px;
+    font-size: 15px;
+    /* color: #10c9c3; */
+}
+.project-btn .mid-btn  a i{
+    font-size: 15px;
+}
+.project-btn a:hover {
+    color: #10c9c3;
+}
+/* ------------------------------------------ PROJECT STYLE END ------------------------------------ */
+
+/*------------------------------------------> FOOTER START <------------------------------------------ */
+.foorer {
+    padding: 80px 0;
+    background: #141414;
+}
+.design-info {
+    color: #fff;
+}
+
+.design-info h3 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+.design-info p {
+    color: #757575;
+    font-size: 14px;
+    font-family: 'Lato';
+    font-weight: 400;
+    line-height: 22px;
+}
+.design-info p:last-child {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #414141;
+}
+.contact-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-info > a {
+    color: #b6b6b6;
+    font-family: 'Lato';
+    font-size: 15px;
+    line-height: 16px;
+    margin: 5px 0;
+    letter-spacing: .5px;
+}
+
+.contact-info > a:last-child:hover {
+    color: #10c9c3;
+    text-decoration: underline;
+    transition: all .4s ease-in;
+}
+.footer-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.foot-menu ul li {
+    margin: 5px 0;
+}
+
+.foot-menu ul li a {
+    font-size: 14px;
+    font-family: 'Lato';
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #b6b6b6;
+}
+
+.foot-menu ul li a:hover {
+    color: #10c9c3;
+    text-decoration: line-through;
+}
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.social-icon a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #10c9c3;
+    display: grid;
+    place-items: center;
+    margin: 0 8px;
+    transition: all .4s ease-in-out;
+}
+
+.social-icon a i {
+    font-size: 18px;
+    color: #fff;
+}
+.social-icon a.facebook:hover {
+    background-color: #3b5998;
+    transform: scale(.9);
+    box-shadow: 0px 0px 10px 0px #3b5998;
+}
+.social-icon a.twitter:hover {
+    background-color: #00acee;
+    transform: scale(.9);
+    box-shadow: 0px 0px 10px 0px #00acee;
+}
+.social-icon a.linkedin:hover {
+    background-color: #0e76a8;
+    transform: scale(.9);
+    box-shadow: 0px 0px 10px 0px #0e76a8;
+}
+.social-icon a.dribble:hover {
+    background-color: #ea4c89;
+    transform: scale(.9);
+    box-shadow: 0px 0px 10px 0px #ea4c89;
+}
+/*------------------------------------------ ---------------> FOOTER END <------------------------------------------ */
