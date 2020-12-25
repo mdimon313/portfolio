@@ -3,6 +3,7 @@ let closeBtn = document.querySelector(".close-btn");
 let navList = document.querySelector("#nav-list");
 
 
+
 showBtn.addEventListener('click', ()=> {
     navList.style = 'left: 0';
     closeBtn.style.display = 'block';
@@ -13,3 +14,9 @@ closeBtn.addEventListener("click", () => {
     closeBtn.style.display = "none";
     showBtn.style.display = "block";
 });
+
+
+window.addEventListener("scroll", function() {
+	let header = document.querySelector("#header");
+	header.classList.toggle("sticky",window.scrollY > 0);
+})
