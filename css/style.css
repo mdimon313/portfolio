@@ -42,17 +42,19 @@ section {
 .mb-2 {
     margin-bottom: 2rem;
 }
+.mb-5 {
+    margin-bottom: 5rem;
+}
 .d-none {
 	display:none;
 }
 .row {
     display: flex;
-    align-items: center;
-    /* justify-content: center; */
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 .container {
-/*    width: 1170px;*/
     max-width: 1170px;
     margin: auto;
     padding: 0 15px;
@@ -68,6 +70,7 @@ section {
     position: absolute;
     z-index: 999;
     top: 0;
+	transition: all .4s ease;
 }
 .header::after {
     content: '';
@@ -78,7 +81,7 @@ section {
 	position: fixed;
 	top: 0;
 	background: #10c9c3;
-	box-shadow: 0px 8px 5px 0px #00000045;
+	box-shadow: 0px 7px 15px -2px #8585858a;
 }
 /*
 nav {
@@ -116,9 +119,9 @@ nav ul li a {
     text-transform: uppercase;
     border-radius: 3px;
 }
-.active, nav ul li a:hover {
+nav ul li a.active, nav ul li a:hover {
     /* background: #10c9c3; */
-    /* color: #10c9c3; */
+    color: #333;
     text-decoration: line-through;
     transition: all .5s ease-in-out;
 }
@@ -220,15 +223,14 @@ nav ul li a {
     text-align: center;
     color: #787878;
 }
-.sec-title-head a {
+.sec-title-head .learn-more {
     font-size: 15px;
-    color: #787878;
+    color: #10c9c3;
     line-height: 30px;
     letter-spacing: 1px;
+    transition: all .3s ease;
 }
-.sec-title-head a:hover {
-    color: #10c9c3;
-    transition: all .3s ease-in-out;
+.sec-title-head .learn-more:hover {
     text-decoration: underline;
 }
 .sign-img {
@@ -402,7 +404,7 @@ section.work {
     left: 0;
     top: 0;
     background: rgba(0,0,0,0.8);
-    opacity: 0;
+    transform: scaleY(0);
     transition: all .4s ease-out;
     z-index: 1;
 }
@@ -411,7 +413,7 @@ section.work {
     transition: all .4s ease-in-out;
 }
 .grid .img:hover .icon {
-    opacity: 1 !important;
+    transform: scaleY(1) !important;
 }
 .grid .img .icon i {
     color: #fff;
@@ -619,7 +621,7 @@ a.send-msg {
 /*          NEED PROJECT End          */
 
 /* ---------------> FOOTER START <----------------- */
-.foorer {
+.footer {
     padding: 80px 0;
     background: #141414;
 }
@@ -730,6 +732,507 @@ a.send-msg {
     box-shadow: 0px 0px 10px 0px #ea4c89;
 }
 /* ---------------> FOOTER END <----------------- */
+
+
+/* ! ===================== Start About Page Style ================== */
+/* ---------------------- BANNER START --------------------- */
+section.about-banner {
+    background: url(../image/about/about2.jpg) no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    background-position: center;
+    position: relative;
+}
+
+.banner-contant {
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.banner-contant h1 {
+    font-size: 3rem;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    text-align: center;
+}
+
+.banner-contant p {
+    font-family: 'Lato';
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 18px;
+}
+/* ---------------------- BANNER END --------------------- */
+
+/* --------------------- ABOUT ME START -------------------- */
+section.about-me {
+    position: relative;
+}
+
+section.about-me::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: #ddd;
+    background: url(../image/pic.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*----------------------- ONLY RESPOSSIVESTYLE START---------------------*/
+.user-image {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    display: none;
+}
+
+.user-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+/*----------------------- ONLY RESPOSSIVESTYLE END ---------------------*/
+.about-me {
+    padding: 100px 0;
+}
+.about-me-content {
+    overflow: hidden;
+    padding: 15px;
+}
+
+.about-me-content h2 {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 2.3rem;
+}
+
+.about-me-content h2:first-letter {
+    color: #10c9c3;
+    font-weight: 900;
+    font-size: 4rem;
+    text-shadow: -2px 1px 6px #00000091;
+}
+
+.about-me-content p {
+    font-size: 1.1rem;
+    line-height: 24px;
+    font-family: 'Lato';
+    font-weight: 400;
+}
+.about-me-content .hair-me {
+    /* padding: 10px 40px; */
+    border: 1px solid #10c9c3;
+    outline: none;
+    color: #fff;
+    background: #10c9c3;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    letter-spacing: 1.3px;
+	transition: all .3s ease-in-out;
+}
+.about-me-content .hair-me:hover {
+    background: transparent;
+    border: 1px solid #10c9c3;
+    color: #585858;
+}
+
+/* --------------------- ABOUT ME END -------------------- */
+
+
+/*          NEED PROJECT START              */
+.sec-title-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.sec-title-head h2 {
+    /* text-transform: capitalize; */
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Lato';
+    color: #191919;
+}
+.sec-title-head h2::first-letter {
+    font-size: 45px;
+    color: #10c9c3;
+    margin-right: 2px;
+    text-shadow: -2px 1px 6px #00000091;
+}
+.sec-title-head p {
+    flex-wrap: wrap;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    color: #787878;
+}
+.sec-title-head .lets-talk {
+    padding: 10px 20px;
+    border: 1px solid #10c9c3;
+    outline: none;
+    color: #fff;
+    background: #10c9c3;
+    border-radius: 3px;
+    font-size: 1.1rem;
+    font-family: 'Lato';
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 1.3px;
+    transition: all .3s ease-in-out;
+}
+.sec-title-head .lets-talk:hover {
+    background: transparent;
+    border: 1px solid #10c9c3;
+    color: #585858;
+    text-decoration: none;
+}
+
+/*          NEED PROJECT END              */
+
+/* ! ===================== Start About Page Style ================== */
+
+
+/* ! ===================== Start  WORK PAGE Style ================== */
+
+/*          About Us Start              */
+.sec-title-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.sec-title-head h2 {
+    text-transform: capitalize;
+    font-size: 27px;
+    font-weight: 600;
+    font-family: 'Lato';
+    color: #191919;
+}
+.sec-title-head h2::first-letter {
+    font-size: 35px;
+    color: #10c9c3;
+    margin-right: 2px;
+}
+.sec-title-head p {
+    flex-wrap: wrap;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    color: #787878;
+    margin-bottom: 3rem;
+}
+.sec-title-head a {
+    font-size: 15px;
+    color: #787878;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.sec-title-head a:hover {
+    color: #10c9c3;
+    transition: all .3s ease-in-out;
+    text-decoration: underline;
+}
+.sign-img {
+    max-width: 225px;
+    height: auto;
+}
+.sign-img img {
+    width: 100%;
+    height: 100% !important;
+}
+/*          About Us End              */
+
+
+/*          WORK GALLERY START              */
+
+.work-page {
+    padding: 100px 0 0 0;
+    /* margin-top: 60px; */
+    background: rgb(222 222 222);
+}
+.grid-img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+} 
+.work-grid {
+    /* width: 340px;
+    height: 300px; */
+    overflow: hidden;
+    position: relative;
+
+} 
+.work-grid img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+.work-grid .icon {
+    display: block ;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgb(16 201 195 / 59%);
+    transition: all .4s ease-out;
+    z-index: 1;
+    transform: scaleX(0);
+}
+.work-grid:hover img {
+    transform: scale(1.1);
+    transition: all .4s ease-in-out;
+}
+.work-grid:hover .icon {
+    transform: scaleX(1) !important;
+}
+.work-grid .icon i {
+    color: #fff;
+    font-size: 2rem;
+    display: block !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*          WORK GALLERY END              */
+
+/* ! ===================== END WORK PAGE Style ================== */
+
+
+/* ! ===================== Start CONTACT PAGE Style ================== */
+
+/* ----------------- CONTACT US ----------------------------- */
+.contact {
+    padding: 100px 0 0 0;
+    /* margin-top: 60px; */
+    background: rgb(222 222 222);
+}
+.contact-disc {
+    padding: 10px 15px;
+    overflow: hidden;
+}
+
+.contact-disc h2 {
+    font-size: 2.1rem;
+    font-family: 'Lato';
+    font-weight: 600;
+}
+
+.contact-disc p {
+    font-size: 15px;
+    font-family: 'Lato';
+    font-weight: 400;
+    color: #787878;
+    line-height: 24px;
+}
+.contact-address p {
+    line-height: 30px;
+}
+.contact-address p span {
+    color: #191919;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+.contact-form form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+.input-name {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.input-name input {
+    border: 1px solid #eee;
+    padding: 15px 20px;
+    margin-left: 10px;
+    outline: none;
+    border-radius: 4px;
+    flex: 1;
+    transition: all .4s ease-in-out;
+}
+.input-name input.name {
+    margin-left: 0;
+}
+input::placeholder {
+    color: #787878;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+input.title, textarea {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    outline: none;
+    transition: all .4s ease-in-out;
+}
+textarea {
+    height: 170px;
+    resize: none;
+    font-size: 18px;
+    color: #333;
+    font-family: 'Lato';
+}
+textarea::placeholder {
+    color: #787878;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+.input-name input:focus,
+input:focus,
+textarea:focus {
+
+    border: 1px solid #10c9c3;
+}
+.send-msg {
+    width: 150px;
+    height: 40px;
+    line-height: 38px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #10c9c3;
+    border: 1px solid #10c9c3;
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: block;
+    text-align: center
+}
+.send-msg:hover {
+    border: 1px solid #10c9c3;
+    background: transparent;
+    color: #333;
+}
+iframe.map {
+    width: 100%;
+    height: 300px;
+}
+/* ----------------- CONTACT US END ----------------------------- */
+
+/* ! ===================== END WORK PAGE Style ================== */
+
+
+/* ! ===================== END PROJECT PAGE STYLE ================== */
+
+/* ------------------------------------------ PROJECT STYLE START ------------------------------------ */
+.project {
+    background: #f6f6f6;
+    padding-top: 100px;
+    position: relative;
+}
+section.project::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: url(../image/project/project_img1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.project-disc {
+    padding: 8px;
+    overflow: hidden;
+}
+
+.project-disc h2 {
+    font-size: 32px;
+    font-family: 'Montserrat';
+    color: #191919;
+    font-weight: 600;
+}
+
+.project-disc p {
+    font-size: 17px;
+    color: #787878;
+    font-family: 'Lato';
+    font-weight: 400;
+    line-height: 25px;
+}
+.project-details p {
+    line-height: 30px;
+}
+.project-disc p span {
+    color: #191919;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    margin-right: 8px;
+}
+
+/* ------------------------------------------ PROJECT STYLE END ------------------------------------ */
+
+
+/* ------------------------------------------ PROJECT ARROW BUTTON STYLE END ------------------------------------ */
+.buttons {
+    padding: 40px 0;
+    /* background: #f6f6f6; */
+}
+
+.project-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.project-btn .pre-btn a {
+    display: flex;
+    display: block;
+    align-items: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Lato';
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+}
+.project-btn a i {
+    margin: 0 8px;
+    font-size: 15px;
+    /* color: #10c9c3; */
+}
+.project-btn .mid-btn  a i{
+    font-size: 15px;
+}
+.project-btn a:hover {
+    color: #10c9c3;
+}
+/* ------------------------------------------ PROJECT ARROW BUTTON STYLE END ------------------------------------ */
+
+/* ! ===================== END PROJECT PAGE STYLE ================== */
 
 
 

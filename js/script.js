@@ -1,13 +1,14 @@
+// !=============== TOGGLE MENU =============
+
 let showBtn = document.querySelector(".show-btn");
 let closeBtn = document.querySelector(".close-btn");
 let navList = document.querySelector("#nav-list");
 
 
-
 showBtn.addEventListener('click', ()=> {
-    navList.style = 'left: 0';
+	navList.style = 'left: 0';
+	showBtn.style.display = "none";
     closeBtn.style.display = 'block';
-    showBtn.style.display = 'none';
 })
 closeBtn.addEventListener("click", () => {
     navList.style = "left: -100%";
@@ -16,7 +17,16 @@ closeBtn.addEventListener("click", () => {
 });
 
 
+// !================ SCROLL EVENT ================
+
 window.addEventListener("scroll", function() {
 	let header = document.querySelector("#header");
-	header.classList.toggle("sticky",window.scrollY > 0);
+	let positionFixed = window.pageYOffset;
+
+	if (positionFixed>100) {
+		header.classList.add('sticky');
+	} 
+	if (positionFixed<=99) {
+		header.classList.remove('sticky');
+	}
 })

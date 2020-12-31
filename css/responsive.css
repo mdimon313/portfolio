@@ -19,7 +19,7 @@
 	
 	.header {
 		background: #10c9c3; 
-		position: fixed;
+		position: fixed !important;
 		top: 0;
 		left: 0;
 		z-index: 9;
@@ -285,10 +285,11 @@
 	}
 	/*=================== SKILL END ============================= */
 	/*=================== WORK START ============================= */
-	.grid {
+	.grid,
+	.grid-img {
 		grid-template-columns: repeat(1, 1fr);
 	}
-	.grid:hover img,
+	.work-grid:hover img,
 	.grid .img:hover img {
 		transform: scale(.9);
 	}
