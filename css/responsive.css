@@ -26,7 +26,7 @@
 	}
 	label.logo {
 		font-size: 30px;
-		padding-left: 
+		padding-left: .3rem;
 	}
 	nav ul li {
 		float: none;
@@ -70,6 +70,9 @@
 	
 	/* START BANNER */
 	
+	.col-md-12 {
+		width: 100%;
+	}
 	
 	.md-banner {
 		overflow: hidden;
@@ -82,12 +85,17 @@
 	section.banner {
 		display: none;
 	}
+	.profile-img {
+		padding: 1.5rem;
+		margin-bottom: 0rem;
+	}
 	.profile-img img {
 		width: 200px;
 		height: 200px;
 		border-radius: 50%;
 		margin: auto !important;
 		display: block;
+		box-shadow: 0pc 0px 22px -7px #969696a3, 0pc 0px 32px -12px #969696a3, 0pc 0px 37px -12px #969696a3;
 	}
 	section.mobile-banner {
 		background: #000;
@@ -149,9 +157,9 @@
 	}
 	/*          ABOUT END            */
 
+
 	/*          SKILL START            */
-	
-	.skill {
+		.skill {
 		background-color: #f8f9f9;
 	}
 	.skill-head,
@@ -207,9 +215,7 @@
 	.design-info {
 		text-align: center;
 	}
-	/* .footer-menu {
-		flex-direction: column;
-	} */
+
 	.foot-menu ul li {
 		margin-top: 1rem;
 	}
@@ -239,21 +245,27 @@
 	}
 	
 	/*=================== BANNER START ============================= */
+	.profile-img {
+		padding: 1.5rem;
+		margin-bottom: 0rem;
+	}
 	.profile-img img {
-		width: 150px;
-		height: 150px;
+	width: 150px;
+	height: 150px;
+	box-shadow: 0pc 0px 22px -7px #969696a3, 0pc 0px 32px -12px #969696a3, 0pc 0px 37px -12px #969696a3;
 	}
 	.porfile-disc h1 {
-		font-size: 24px;
+		font-size: 22px;
+    margin-bottom: 16px;
 	}
 	.porfile-disc p {
-		font-size: 14px;
+		font-size: 12px;
 	}
 	.porfile-disc .button {
 		width: 125px;
-		height: 35px;
-		font-size: 14px;
-		line-height: 30px;
+		height: 32px;
+		font-size: 12px;
+		line-height: 27px;
 	}
 	/*=================== BANNER END ============================= */
 	/*=================== ABOUT START ============================= */

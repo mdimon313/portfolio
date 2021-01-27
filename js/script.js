@@ -1,3 +1,4 @@
+
 // !=============== TOGGLE MENU =============
 
 let showBtn = document.querySelector(".show-btn");
@@ -16,6 +17,16 @@ closeBtn.addEventListener("click", () => {
     showBtn.style.display = "block";
 });
 
+// HIDE MENU WHEN CLICK ANY UL LINK
+
+	function hide_menu() {
+		navList.style = "left: -100%";
+		closeBtn.style.display = "none";
+		showBtn.style.display = "block";
+
+	}
+	
+
 
 // !================ SCROLL EVENT ================
 
@@ -30,3 +41,4 @@ window.addEventListener("scroll", function() {
 		header.classList.remove('sticky');
 	}
 })
+
