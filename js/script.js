@@ -7,12 +7,14 @@ let navList = document.querySelector("#nav-list");
 
 
 showBtn.addEventListener('click', ()=> {
-	navList.style = 'left: 0';
+	navList.style.transform = 'scaleY(1)';
+	navList.style.visibility = 'visible';
 	showBtn.style.display = "none";
     closeBtn.style.display = 'block';
 })
 closeBtn.addEventListener("click", () => {
-    navList.style = "left: -100%";
+    navList.style.transform = 'scaleY(0)';
+	navList.style.visibility = 'hidden';
     closeBtn.style.display = "none";
     showBtn.style.display = "block";
 });
@@ -20,7 +22,8 @@ closeBtn.addEventListener("click", () => {
 // HIDE MENU WHEN CLICK ANY UL LINK
 
 	function hide_menu() {
-		navList.style = "left: -100%";
+		navList.style.transform = 'scaleY(0)';
+		navList.style.visibility = 'hidden';
 		closeBtn.style.display = "none";
 		showBtn.style.display = "block";
 

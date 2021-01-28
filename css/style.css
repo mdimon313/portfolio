@@ -106,7 +106,6 @@ nav ul {
     margin-right: 20px;
 }
 nav ul li {
-/*    display: inline-block;*/
     float: left;
     line-height: 60px;
     margin: 0 2px;
@@ -120,7 +119,6 @@ nav ul li a {
     border-radius: 3px;
 }
 nav ul li a.active, nav ul li a:hover {
-    /* background: #10c9c3; */
     color: #333;
     text-decoration: line-through;
     transition: all .5s ease-in-out;
@@ -130,7 +128,6 @@ nav ul li a.active, nav ul li a:hover {
     color: #fff;
     float: right;
     line-height: 60px;
-    margin-right: 40px;
     cursor: pointer;
     display: none;
     transition: all .4s ease-in-out;
@@ -403,14 +400,14 @@ section.work {
     height: 100%;
     left: 0;
     top: 0;
-    background: rgba(0,0,0,0.8);
+    background: rgb(0 0 0 / 52%);
     transform: scaleY(0);
     transition: all .4s ease-out;
     z-index: 1;
 }
 .grid .img:hover img {
-    transform: scale(1.1);
-    transition: all .4s ease-in-out;
+    transform: scale(1.5);
+    transition: all .4s ease;
 }
 .grid .img:hover .icon {
     transform: scaleY(1) !important;
@@ -462,7 +459,7 @@ iframe.video {
     transition: all .4s ease-in-out;
 }
 .service-box:hover {
-    box-shadow: 0px 0px 10px -2px rgb(215 215 215);
+    box-shadow: 0px 0px 10px -2px rgb(16 201 195 / 45%);
 }
 .services-icon {
     margin-bottom: 1.5rem;
@@ -936,18 +933,17 @@ section.about-me::before {
     line-height: 26px;
     text-align: center;
     color: #787878;
-    margin-bottom: 3rem;
 }
 .sec-title-head a {
     font-size: 15px;
     color: #787878;
     line-height: 30px;
     letter-spacing: 1px;
+    text-decoration: underline;
 }
 .sec-title-head a:hover {
     color: #10c9c3;
     transition: all .3s ease-in-out;
-    text-decoration: underline;
 }
 .sign-img {
     max-width: 225px;
