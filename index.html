@@ -1,479 +1,589 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Porfolio</title>
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-</head>
-<body>
-    <!-- HEADER START --------------------------------->
-    <header class="header " id="header">
-        <div class="container">
-            <nav>
-                <label for="check" class="show-btn"><i class="fas fa-bars"></i></label>
-                <label for="check" class="close-btn"><i class="fas fa-times"></i></label>
-                <label class="logo"><a href="#"><img src="image/logo/logo.png" alt=""></a></label>
-                <ul id="nav-list">
-                    <li><a class="active" href="#" id="link" onclick= "hide_menu()">Home</a></li>
-                    <li><a href="#about" id="link" onclick= "hide_menu()">About</a></li>
-                    <li><a href="#work" id="link" onclick= "hide_menu()">work</a></li>
-                    <li><a href="#wor-process" id="link" onclick= "hide_menu()">process</a></li>
-                    <li><a href="#services" id="link" onclick= "hide_menu()">services</a></li>
-                    <li><a href="#testimonial" id="link" onclick= "hide_menu()">testimonials</a></li>
-                    <li><a href="contact.html" target="_blank" id="link" onclick= "hide_menu()">contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <!-- HEADER END ----------------------------------->
 
-    <!-- BANNER START ----------------------------------->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- Pre load -->
 
-    <section class="banner">
+    <div class="loder">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <!-- End Pre load -->
+    <div class="wrapper">
+      <!-- HEADER START --------------------------------->
+      <header class="header" id="header">
         <div class="container">
-            <div class="banner-content">
-                <h1 class="banner-head">We design and Devolop</h1>
-                <p class="head-discription">We are a new design studio based in USA. We have over
-                20 years of combined experience, and know a thing or two
-                about designing websites and mobile apps.</p>
-                <a href="#" class="button main-head-btn">contact us</a>
-            </div>
+          <nav>
+            <label for="check" class="show-btn"
+              ><i class="fas fa-bars"></i
+            ></label>
+            <label for="check" class="close-btn"
+              ><i class="fas fa-times"></i
+            ></label>
+            <label class="logo">
+              <a href="#">
+                <!--<img src="image/logo/logo.png" alt="">-->
+                <h1>Imon</h1>
+              </a>
+            </label>
+            <ul id="nav-list">
+              <li>
+                <a class="active" href="#" id="link" onclick="hide_menu()"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#about" id="link" onclick="hide_menu()">About</a>
+              </li>
+              <li><a href="#work" id="link" onclick="hide_menu()">work</a></li>
+              <li>
+                <a href="#wor-process" id="link" onclick="hide_menu()"
+                  >process</a
+                >
+              </li>
+              <li>
+                <a href="#services" id="link" onclick="hide_menu()">services</a>
+              </li>
+              <li>
+                <a href="#testimonial" id="link" onclick="hide_menu()"
+                  >testimonials</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  target="_blank"
+                  id="link"
+                  onclick="hide_menu()"
+                  >contact</a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
-    </section>
-	
-	<!--     FOR MOBILE VIEW ----------------------------->
-	<section class="mobile-banner d-none">
+      </header>
+      <!-- HEADER END ----------------------------------->
+
+      <!-- BANNER START ----------------------------------->
+
+      <section class="banner">
+        <div class="container">
+          <div class="banner-content">
+            <h1 class="banner-head tlt">We design and Devolop</h1>
+            <p class="head-discription">
+              We are a new design studio based in USA. We have over 20 years of
+              combined experience, and know a thing or two about designing
+              websites and mobile apps.
+            </p>
+            <a href="#" class="button main-head-btn">contact us</a>
+          </div>
+        </div>
+      </section>
+
+      <!--     FOR MOBILE VIEW ----------------------------->
+      <section class="mobile-banner d-none">
         <div class="box">
-            <div class="row md-banner">
-                <div class="col-6 col-md-12">
-                    <div class="profile-img mb-2">
-                        <img src="image/pic.png" alt="profile">
-                    </div>
-                </div>
-                <div class="col-6 col-md-12">
-                    <div class="porfile-disc">
-                        <h1 class="mb-2">We design and Develope</h1>
-                        <p class="mb-2">We are a new design studio based in USA. We have over 20 years of combined experience, and know a thing or two about designing websites and mobile apps.</p>
-                        <button class="button main-head-btn">Contact Us</button>
-                    </div>
-                </div>
+          <div class="row md-banner">
+            <div class="col-6 col-md-12">
+              <div class="profile-img mb-2">
+                <img src="image/pic.png" alt="profile" />
+              </div>
             </div>
+            <div class="col-6 col-md-12">
+              <div class="porfile-disc">
+                <h1 class="mb-2">We design and Develope</h1>
+                <p class="mb-2">
+                  We are a new design studio based in USA. We have over 20 years
+                  of combined experience, and know a thing or two about
+                  designing websites and mobile apps.
+                </p>
+                <button class="button main-head-btn">Contact Us</button>
+              </div>
+            </div>
+          </div>
         </div>
-	</section>
-    <!-- FOR MOBILE VIEW END --------------------------->
+      </section>
+      <!-- FOR MOBILE VIEW END --------------------------->
 
-    <!-- ABOUT START ---------------------------------->
-    <section class="about" id="about">
+      <!-- ABOUT START ---------------------------------->
+      <section class="about" id="about">
         <div class="container">
-            <div class="row">
-                <div class="sec-title-head">
-                    <h2 class="mb-2">about us</h2>
-                    <p>Divide have don't man wherein air fourth. Own itself make have night won't make.
-                        A you under Seed appear which good give. Own give air without fowl moveth dry first
-                        heaven fruit, dominion she'd won't very all.</p>
-						<a href="about.html" class="learn-more mb-2" target="_blank">learn more.</a>
-                    <div class="sign-img">
-                        <img src="image/sign.png" alt="Signature" class="sign">
-                    </div>    
-                </div>
+          <div class="row">
+            <div class="sec-title-head">
+              <h2 class="mb-2">about us</h2>
+              <p>
+                Divide have don't man wherein air fourth. Own itself make have
+                night won't make. A you under Seed appear which good give. Own
+                give air without fowl moveth dry first heaven fruit, dominion
+                she'd won't very all.
+              </p>
+              <a href="about.html" class="learn-more mb-2" target="_blank"
+                >learn more.</a
+              >
+              <div class="sign-img">
+                <img src="image/sign.png" alt="Signature" class="sign" />
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-    <!-- ABOUT END ---------------------------------->
+      </section>
+      <!-- ABOUT END ---------------------------------->
 
-    <!-- SKILL START ---------------------------------->
-    <section class="skill" id="skill">
-        <div class=" container">
-            <div class="row">
-                <div class="col-6">
-                    <div class="skill-head mb-2">
-                        <h2>Professional skill</h2>
-                    </div>
-                    <div class="skill-info">
-                        <div class="skill-meta mb-2">
-                            <label class="skill-disc">ui/ux design <span>75%</span></label>
-                            <div class="range">
-                                <span class="rang ui-rang1"></span>
-                                <span class="rang ui-rang2"></span>
-                            </div>
-                        </div>
-                        <div class="skill-meta mb-2">
-                            <label class="skill-disc">Web Developement <span>90%</span></label>
-                            <div class="range">
-                                <span class="rang web-dev-rang1"></span>
-                                <span class="rang web-dev-rang2"></span>
-                            </div>
-                        </div>
-                        <div class="skill-meta mb-2">
-                            <label class="skill-disc">Marketing <span>65%</span></label>
-                            <div class="range">
-                                <span class="rang marketing-rang1"></span>
-                                <span class="rang marketing-rang2"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- SKILL END ---------------------------------->
-
-    <!-- CLIENT PROJECT COMPLATE START ---------------------------------->
-    <section class="complete-project" id="complete-project">
+      <!-- SKILL START ---------------------------------->
+      <section class="skill" id="skill">
         <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <div class="porject-complete-single-box">
-                        <div class="project-icon">
-                            <img src="image/client_icon/icon1.png" alt="icon1">
-                        </div>                        
-                        <div class="porject-meta mt-2">
-                            <h4>548</h4>
-                            <p>projects completed</p>
-                        </div>
-                    </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="skill-head mb-2">
+                <h2>Professional skill</h2>
+              </div>
+              <div class="skill-info">
+                <div class="skill-meta mb-2">
+                  <label class="skill-disc"
+                    >ui/ux design <span>75%</span></label
+                  >
+                  <div class="range">
+                    <span class="rang ui-rang1"></span>
+                    <span class="rang ui-rang2"></span>
+                  </div>
                 </div>
-                <div class="col-4 mt-2">
-                    <div class="porject-complete-single-box">
-                        <div class="project-icon">
-                            <img src="image/client_icon/icon2.png" alt="icon1">
-                        </div>
-                        <div class="porject-meta mt-2">
-                            <h4>1465</h4>
-                            <p>working hours</p>
-                        </div>
-                    </div>
+                <div class="skill-meta mb-2">
+                  <label class="skill-disc"
+                    >Web Developement <span>90%</span></label
+                  >
+                  <div class="range">
+                    <span class="rang web-dev-rang1"></span>
+                    <span class="rang web-dev-rang2"></span>
+                  </div>
                 </div>
-                <div class="col-4 mt-2">
-                    <div class="porject-complete-single-box">
-                        <div class="project-icon">
-                            <img src="image/client_icon/icon3.png" alt="icon1">
-                        </div>
-                        <div class="porject-meta mt-2">
-                            <h4>612</h4>
-                            <p>positive feedbacks</p>
-                        </div>
-                    </div>
+                <div class="skill-meta mb-2">
+                  <label class="skill-disc">Marketing <span>65%</span></label>
+                  <div class="range">
+                    <span class="rang marketing-rang1"></span>
+                    <span class="rang marketing-rang2"></span>
+                  </div>
                 </div>
-                <div class="col-4 mt-2">
-                    <div class="porject-complete-single-box">
-                        <div class="project-icon">
-                            <img src="image/client_icon/icon4.png" alt="icon1">
-                        </div>
-                        <div class="porject-meta mt-2">
-                            <h4>712</h4>
-                            <p>happy clients</p>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-    <!-- CLIENT PROJECT COMPLATE END ---------------------------------->
+      </section>
+      <!-- SKILL END ---------------------------------->
 
-    <!-- WORK START ---------------------------------->
-    <section class="work" id="work">
-        
+      <!-- CLIENT PROJECT COMPLATE START ---------------------------------->
+      <section class="complete-project" id="complete-project">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <div class="porject-complete-single-box">
+                <div class="project-icon">
+                  <img src="image/client_icon/icon1.png" alt="icon1" />
+                </div>
+                <div class="porject-meta mt-2">
+                  <h4>548</h4>
+                  <p>projects completed</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mt-2">
+              <div class="porject-complete-single-box">
+                <div class="project-icon">
+                  <img src="image/client_icon/icon2.png" alt="icon1" />
+                </div>
+                <div class="porject-meta mt-2">
+                  <h4>1465</h4>
+                  <p>working hours</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mt-2">
+              <div class="porject-complete-single-box">
+                <div class="project-icon">
+                  <img src="image/client_icon/icon3.png" alt="icon1" />
+                </div>
+                <div class="porject-meta mt-2">
+                  <h4>612</h4>
+                  <p>positive feedbacks</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mt-2">
+              <div class="porject-complete-single-box">
+                <div class="project-icon">
+                  <img src="image/client_icon/icon4.png" alt="icon1" />
+                </div>
+                <div class="porject-meta mt-2">
+                  <h4>712</h4>
+                  <p>happy clients</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CLIENT PROJECT COMPLATE END ---------------------------------->
+
+      <!-- WORK START ---------------------------------->
+      <section class="work" id="work">
         <div class="grid">
-            <div class="img img1">
-                <img src="image/grid_img1.jpg" alt="Image 1">
-                <div class="icon"><i class="far fa-eye"></i></div>
-            </div>
-            <div class="img img2">
-                <img src="image/grid_img2.jpg" alt="Image 2">
-                <div class="icon"><i class="far fa-eye"></i></div>
-            </div>
-            <div class="img img3">
-                <img src="image/grid_img3.jpg" alt="Image 3">
-                <div class="icon"><i class="far fa-eye"></i></div>
-            </div>
-            <div class="img img4">
-                <img src="image/grid_img4.jpg" alt="Image 4">
-                <div class="icon"><i class="far fa-eye"></i></div>
-            </div>
-            <div class="img img5">
-                <img src="image/grid_img5.jpg" alt="Image 5">
+          <div class="img img1">
+            <img src="image/grid_img1.jpg" alt="Image 1" />
+            <div class="icon"><i class="far fa-eye"></i></div>
+          </div>
+          <div class="img img2">
+            <img src="image/grid_img2.jpg" alt="Image 2" />
+            <div class="icon"><i class="far fa-eye"></i></div>
+          </div>
+          <div class="img img3">
+            <img src="image/grid_img3.jpg" alt="Image 3" />
+            <div class="icon"><i class="far fa-eye"></i></div>
+          </div>
+          <div class="img img4">
+            <img src="image/grid_img4.jpg" alt="Image 4" />
+            <div class="icon"><i class="far fa-eye"></i></div>
+          </div>
+          <div class="img img5">
+            <img src="image/grid_img5.jpg" alt="Image 5" />
 
-                <div class="icon"><i class="far fa-eye"></i></div>
-            </div>
-            <div class="img img6">
-                <img src="image/grid_img6.jpg" alt="Image 6">
-                <div class="icon"><i class="far fa-eye"></i></div>
-            </div>
-            <div class="img img7">
-                <img src="image/grid_img7.jpg" alt="Image 7">
-                <div class="icon"><i class="far fa-eye"></i></div>
-            </div>
-            <div class="img img8">
-                <img src="image/grid_img8.jpg" alt="Image 8">
-                <div class="icon"><i class="far fa-eye"></i></div>
-            </div>
+            <div class="icon"><i class="far fa-eye"></i></div>
+          </div>
+          <div class="img img6">
+            <img src="image/grid_img6.jpg" alt="Image 6" />
+            <div class="icon"><i class="far fa-eye"></i></div>
+          </div>
+          <div class="img img7">
+            <img src="image/grid_img7.jpg" alt="Image 7" />
+            <div class="icon"><i class="far fa-eye"></i></div>
+          </div>
+          <div class="img img8">
+            <img src="image/grid_img8.jpg" alt="Image 8" />
+            <div class="icon"><i class="far fa-eye"></i></div>
+          </div>
         </div>
         <div class="container">
-            <div class="lode-more">
-                <a href="work.html" target="_blank" class="load-more">load more work</a>
-            </div>
+          <div class="lode-more">
+            <a href="work.html" target="_blank" class="load-more"
+              >load more work</a
+            >
+          </div>
         </div>
-    </section>
-    <!-- WORK END ---------------------------------->
 
-    <!-- WORK PORCESS START ---------------------------------->
-    <section class="work-process" id="wor-process">
+        <!-- preview Imgae section -->
+        <div class="preview-box">
+          <div class="detail">
+            <span class="title">
+              image
+              <p class="current"></p>
+              of
+              <p class="total"></p>
+            </span>
+            <span class="close" id="close">
+              <i class="fas fa-times"></i>
+            </span>
+          </div>
+          <div class="img-box">
+            <div class="prev">
+              <i class="fas fa-arrow-left prev-btn"></i>
+            </div>
+            <div class="nxt">
+              <i class="fas fa-arrow-right nxt-btn"></i>
+            </div>
+            <img src="" id="img" alt="Preview Image" />
+          </div>
+        </div>
+        <div class="shadow"></div>
+      </section>
+      <!-- WORK END ---------------------------------->
+
+      <!-- WORK PORCESS START ---------------------------------->
+      <section class="work-process" id="wor-process">
         <div class="container">
-            <div class="row">
-                <div class="sec-title-head">
-                    <h2 class="mb-2">Our Work Process</h2>
-                    <p class="mb-2">Was years it seasons was there form he in in them together over that,
-                    third sixth gathered female creeping bearing behold years.</p>
+          <div class="row">
+            <div class="sec-title-head">
+              <h2 class="mb-2">Our Work Process</h2>
+              <p class="mb-2">
+                Was years it seasons was there form he in in them together over
+                that, third sixth gathered female creeping bearing behold years.
+              </p>
+            </div>
+          </div>
+          <div class="col-12">
+            <iframe
+              src="https://www.youtube.com/embed/y51Cv4wnsPw"
+              frameborder="0"
+              allowfullscreen
+              class="video"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <!-- WORK PORCESS END ---------------------------------->
+
+      <!-- SERVICES START ---------------------------------->
+      <section class="services" id="services">
+        <div class="container">
+          <div class="row mb-2">
+            <div class="col-4">
+              <div class="service-box">
+                <div class="services-icon">
+                  <img src="image/service_icon/icon1.png" alt="icon 1" />
                 </div>
+                <div class="services-disc">
+                  <h3><a href="#">ux/ui design</a></h3>
+                  <p>Be set fourth land god darkness make it wherein own</p>
+                </div>
+              </div>
             </div>
+            <div class="col-4 mt-sm-2">
+              <div class="service-box">
+                <div class="services-icon">
+                  <img src="image/service_icon/icon2.png" alt="icon 1" />
+                </div>
+                <div class="services-disc">
+                  <h3><a href="#">web Developement</a></h3>
+                  <p>A she'd them bring void moving third she'd kind fill</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mt-sm-2">
+              <div class="service-box">
+                <div class="services-icon">
+                  <img src="image/service_icon/icon3.png" alt="icon 1" />
+                </div>
+                <div class="services-disc">
+                  <h3><a href="#">app / mobile</a></h3>
+                  <p>Dominion man second spirit he, earth they're creeping</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mt-sm-2">
+              <div class="service-box">
+                <div class="services-icon">
+                  <img src="image/service_icon/icon4.png" alt="icon 1" />
+                </div>
+                <div class="services-disc">
+                  <h3><a href="#">game and design</a></h3>
+                  <p>Morning his saying moveth it multiply appear life be</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4 mt-sm-2">
+              <div class="service-box">
+                <div class="services-icon">
+                  <img src="image/service_icon/icon5.png" alt="icon 1" />
+                </div>
+                <div class="services-disc">
+                  <h3><a href="#">seo / marketing</a></h3>
+                  <p>Give won't after land fill creeping meat you, may</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mt-sm-2">
+              <div class="service-box">
+                <div class="services-icon">
+                  <img src="image/service_icon/icon6.png" alt="icon 1" />
+                </div>
+                <div class="services-disc">
+                  <h3><a href="#">photography</a></h3>
+                  <p>Creepeth one seas cattle grass give moving saw give</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mt-sm-2">
+              <div class="service-box">
+                <div class="services-icon">
+                  <img src="image/service_icon/icon7.png" alt="icon 1" />
+                </div>
+                <div class="services-disc">
+                  <h3><a href="#">graphic design</a></h3>
+                  <p>Open, great whales air rule for, fourth life whales</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mt-sm-2">
+              <div class="service-box">
+                <div class="services-icon">
+                  <img src="image/service_icon/icon8.png" alt="icon 1" />
+                </div>
+                <div class="services-disc">
+                  <h3><a href="#">illustrations</a></h3>
+                  <p>Whales likeness hath, man kind for them air two won't</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SERVICES END ---------------------------------->
+
+      <!-- TESTIMONIAL START ---------------------------------->
+      <section class="testimonial" id="testimonial">
+        <div class="container">
+          <div class="row">
             <div class="col-12">
-                <iframe src="https://www.youtube.com/embed/y51Cv4wnsPw" frameborder="0" allowfullscreen class="video" frameborder="0"></iframe>
+              <div class="testimonial-content">
+                <p class="mb-2">
+                  <q
+                    >Outstanding job and exceeded all expectations. It was a
+                    pleasure to work with them on a sizable first project and am
+                    looking forward to start the next one asap.</q
+                  >
+                </p>
+                <div class="t-slider">
+                  <span class="dot"></span>
+                  <span class="dot active"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-    <!-- WORK PORCESS END ---------------------------------->
+      </section>
+      <!-- TESTIMONIAL END ---------------------------------->
 
-    <!-- SERVICES START ---------------------------------->
-    <section class="services" id="services">
+      <!-- CLIENTS START ---------------------------------->
+      <section class="clients" id="clients">
         <div class="container">
-            <div class="row mb-2">
-                <div class="col-4">
-                    <div class="service-box">
-                        <div class="services-icon">
-                            <img src="image/service_icon/icon1.png" alt="icon 1">
-                        </div>
-                        <div class="services-disc">
-                            <h3><a href="#">ux/ui design</a></h3>
-                            <p>Be set fourth land god darkness
-                            make it wherein own</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 mt-sm-2">
-                    <div class="service-box">
-                        <div class="services-icon">
-                            <img src="image/service_icon/icon2.png" alt="icon 1">
-                        </div>
-                        <div class="services-disc">
-                            <h3><a href="#">web Developement</a></h3>
-                            <p>A she'd them bring void moving
-                            third she'd kind fill</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 mt-sm-2">
-                    <div class="service-box">
-                        <div class="services-icon">
-                            <img src="image/service_icon/icon3.png" alt="icon 1">
-                        </div>
-                        <div class="services-disc">
-                            <h3><a href="#">app / mobile</a></h3>
-                            <p>Dominion man second spirit he,
-                            earth they're creeping</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 mt-sm-2">
-                    <div class="service-box">
-                        <div class="services-icon">
-                            <img src="image/service_icon/icon4.png" alt="icon 1">
-                        </div>
-                        <div class="services-disc">
-                            <h3><a href="#">game and design</a></h3>
-                            <p>Morning his saying moveth it
-                            multiply appear life be</p>
-                        </div>
-                    </div>
-                </div>
+          <div class="row">
+            <div class="col-4">
+              <div class="clients-company-icons">
+                <img src="image/logo/logo1.png" alt="icon1" />
+              </div>
             </div>
-            <div class="row">
-                <div class="col-4 mt-sm-2">
-                    <div class="service-box">
-                        <div class="services-icon">
-                            <img src="image/service_icon/icon5.png" alt="icon 1">
-                        </div>
-                        <div class="services-disc">
-                            <h3><a href="#">seo / marketing</a></h3>
-                            <p>Give won't after land fill creeping
-                            meat you, may</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 mt-sm-2">
-                    <div class="service-box">
-                        <div class="services-icon">
-                            <img src="image/service_icon/icon6.png" alt="icon 1">
-                        </div>
-                        <div class="services-disc">
-                            <h3><a href="#">photography</a></h3>
-                            <p>Creepeth one seas cattle grass
-                            give moving saw give</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 mt-sm-2">
-                    <div class="service-box">
-                        <div class="services-icon">
-                            <img src="image/service_icon/icon7.png" alt="icon 1">
-                        </div>
-                        <div class="services-disc">
-                            <h3><a href="#">graphic design</a></h3>
-                            <p>Open, great whales air rule for,
-                            fourth life whales</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 mt-sm-2">
-                    <div class="service-box">
-                        <div class="services-icon">
-                            <img src="image/service_icon/icon8.png" alt="icon 1">
-                        </div>
-                        <div class="services-disc">
-                            <h3><a href="#">illustrations</a></h3>
-                            <p>Whales likeness hath, man kind
-                            for them air two won't</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-4 mt-3">
+              <div class="clients-company-icons">
+                <img src="image/logo/logo2.png" alt="icon2" />
+              </div>
             </div>
+            <div class="col-4 mt-3">
+              <div class="clients-company-icons">
+                <img src="image/logo/logo3.png" alt="icon3" />
+              </div>
+            </div>
+            <div class="col-4 mt-3">
+              <div class="clients-company-icons">
+                <img src="image/logo/logo4.png" alt="icon4" />
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    <!-- SERVICES END ---------------------------------->
-    
-    <!-- TESTIMONIAL START ---------------------------------->
-    <section class="testimonial" id="testimonial">
+      </section>
+      <!-- CLIENTS END ---------------------------------->
+
+      <!-- NEED PROJECT START ---------------------------------->
+      <section class="need-project" id="need-project">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="testimonial-content">
-                        <p class="mb-2"><q>Outstanding job and exceeded all expectations. It was a pleasure
-                                to work with them on a sizable first project and am looking
-                                forward to start the next one asap.</q></p>
-                        <div class="t-slider">
-                            <span class="dot"></span>
-                            <span class="dot active"></span>
-                            <span class="dot"></span>
-                        </div>
-                    </div>
-                </div>
+          <div class="row">
+            <div class="sec-title-head">
+              <h2 class="mb-2">Need a Project?</h2>
+              <p class="mb-2">
+                Let us know what you're looking for in an agency. We'll take a
+                look and see if this could be the start of something beautiful.
+              </p>
             </div>
+          </div>
+          <div class="row">
+            <div class="col-12 project-form">
+              <form method="POST">
+                <div class="input-name mb-2">
+                  <input type="text" class="name" placeholder="Your Name" />
+                  <input type="email" class="mt-2" placeholder="Your Email" />
+                </div>
+                <input
+                  type="text"
+                  class="title mb-2"
+                  placeholder="Your Title"
+                />
+                <textarea
+                  class="mb-2 mt-2"
+                  placeholder="Your Comment"
+                ></textarea>
+                <a href="" class="button send-msg">send Message</a>
+              </form>
+            </div>
+          </div>
         </div>
-    </section>
-    <!-- TESTIMONIAL END ---------------------------------->
+      </section>
+      <!-- NEED PROJECT END ---------------------------------->
 
-    <!-- CLIENTS START ---------------------------------->
-    <section class="clients" id="clients">
+      <!-- FOOTER START ---------------------------------->
+      <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <div class="clients-company-icons">
-                        <img src="image/logo/logo1.png" alt="icon1">
-                    </div>
-                </div>
-                <div class="col-4 mt-3">
-                    <div class="clients-company-icons">
-                        <img src="image/logo/logo2.png" alt="icon2">
-                    </div>
-                </div>
-                <div class="col-4 mt-3">
-                    <div class="clients-company-icons">
-                        <img src="image/logo/logo3.png" alt="icon3">
-                    </div>
-                </div>
-                <div class="col-4 mt-3">
-                    <div class="clients-company-icons">
-                        <img src="image/logo/logo4.png" alt="icon4">
-                    </div>
-                </div>
+          <div class="row">
+            <div class="col-4">
+              <div class="design-info">
+                <h3>Design, inc.</h3>
+                <p>copyright pirrol &copy; 2020 design. All Rights reserved.</p>
+                <p>designed by imon</p>
+              </div>
             </div>
+            <div class="col-4 mt-2">
+              <div class="contact-info">
+                <a href="mailto:design@gmail.com">welcome@design.com</a>
+                <a href="tel:+88012345678901">+880 (1123) 242 121 </a>
+                <a href="#contact.html">Learn more</a>
+              </div>
+            </div>
+            <div class="col-4 mt-2">
+              <div class="footer-menu">
+                <div class="foot-menu">
+                  <ul class="foot-nav">
+                    <li class="">
+                      <a href="project.html" target="_blank">projects</a>
+                    </li>
+                    <li class="mt-2"><a href="#">about</a></li>
+                    <li class="mt-2"><a href="#">services</a></li>
+                    <li class="mt-2"><a href="#">carreer</a></li>
+                  </ul>
+                </div>
+                <div class="foot-menu">
+                  <ul class="foot-nav">
+                    <li class="mt-2"><a href="#">news</a></li>
+                    <li class="mt-2"><a href="#">event</a></li>
+                    <li class="mt-2"><a href="#">contact</a></li>
+                    <li class="mt-2"><a href="#">legals</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mt-2">
+              <div class="social-icon">
+                <a href="#" class="facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="linkedin"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="#" class="dribble"><i class="fab fa-dribbble"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Top arrow -->
+          <div class="top-arrow-btn" id="topArrowBtn">
+            <a href="#"><i class="fas fa-angle-up"></i></a>
+          </div>
         </div>
-    </section>
-    <!-- CLIENTS END ---------------------------------->
-
-    <!-- NEED PROJECT START ---------------------------------->
-    <section class="need-project" id="need-project">
-        <div class="container">
-            <div class="row">
-                <div class="sec-title-head">
-                    <h2 class="mb-2">Need a Project?</h2>
-                    <p class="mb-2">Let us know what you're looking for in an agency. We'll take a look and see
-                    if this could be the start of something beautiful.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 project-form">
-                    <form method="POST">
-                        <div class="input-name mb-2">
-                            <input type="text" class="name" placeholder="Your Name">
-                            <input type="email" class="mt-2" placeholder="Your Email">
-                        </div>
-                        <input type="text" class="title mb-2" placeholder="Your Title">
-                        <textarea class="mb-2 mt-2" placeholder="Your Comment"></textarea>
-                        <a href="" class="button send-msg">send Message</a>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- NEED PROJECT END ---------------------------------->
-
-
-    <!-- FOOTER START ---------------------------------->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <div class="design-info">
-                        <h3>Design, inc.</h3>
-                        <p>copyright pirrol &copy; 2020 design. All Rights reserved.</p>
-                        <p>designed by imon</p>
-                    </div>
-                </div>
-                <div class="col-4 mt-2">
-                    <div class="contact-info">
-                        <a href="mailto:design@gmail.com">welcome@design.com</a>
-                        <a href="tel:+88012345678901">+880 (1123) 242 121 </a>
-                        <a href="#contact.html">Learn more</a>
-                    </div>
-                </div>
-                <div class="col-4 mt-2">
-                    <div class="footer-menu">
-                        <div class="foot-menu">
-                            <ul class="foot-nav">
-                                <li class=""><a href="project.html" target="_blank">projects</a></li>
-                                <li class="mt-2"><a href="#">about</a></li>
-                                <li class="mt-2"><a href="#">services</a></li>
-                                <li class="mt-2"><a href="#">carreer</a></li>
-                            </ul>
-                        </div>
-                        <div class="foot-menu">
-                            <ul class="foot-nav">
-                                <li class="mt-2"><a href="#">news</a></li>
-                                <li class="mt-2"><a href="#">event</a></li>
-                                <li class="mt-2"><a href="#">contact</a></li>
-                                <li class="mt-2"><a href="#">legals</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 mt-2">
-                    <div class="social-icon">
-                        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="dribble"><i class="fab fa-dribbble"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- FOOTER END ---------------------------------->
-
-<!-- SCRIPT FILE ------------------------------->
+      </footer>
+      <!-- FOOTER END ---------------------------------->
+    </div>
+    <!-- SCRIPT FILE ------------------------------->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.lettering.js"></script>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
